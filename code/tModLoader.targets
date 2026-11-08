@@ -1,0 +1,10 @@
+﻿<!--
+  tModLoader mods normally live in <Documents>\My Games\Terraria\tModLoader\ModSources and import
+  ModSources\tModLoader.targets. This stub forwards to that file so the mod can live in this repo instead.
+  If your Documents folder is elsewhere (e.g. OneDrive), set the TML_TARGETS environment variable to the full path.
+-->
+<Project>
+  <Import Project="$(TML_TARGETS)" Condition="'$(TML_TARGETS)' != '' And Exists('$(TML_TARGETS)')" />
+  <Import Project="$(USERPROFILE)\Documents\My Games\Terraria\tModLoader\ModSources\tModLoader.targets"
+          Condition="('$(TML_TARGETS)' == '' Or !Exists('$(TML_TARGETS)')) And Exists('$(USERPROFILE)\Documents\My Games\Terraria\tModLoader\ModSources\tModLoader.targets')" />
+</Project>

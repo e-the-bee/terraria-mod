@@ -1,0 +1,20 @@
+# Build output
+bin/
+obj/
+.vs/
+*.user
+
+# Editor / OS junk
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Art / audio program backups and temp files
+*.aseprite-backup
+*.bak
+*.tmp
+*~
+*.asd
+*.reapeaks

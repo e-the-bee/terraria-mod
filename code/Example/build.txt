@@ -1,0 +1,4 @@
+﻿author = YourName
+displayName = Example
+version = 0.1
+buildIgnore = *.csproj, *.user, *.gitkeep, obj\*, bin\*, .vs\*
