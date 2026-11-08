@@ -1,0 +1,11 @@
+[
+  { "name": "task", "color": "1d76db", "description": "Something to do" },
+  { "name": "tbd", "color": "fbca04", "description": "Needs a decision" },
+  { "name": "art", "color": "d93f0b", "description": "Sprites, spritesheets, UI art" },
+  { "name": "music", "color": "5319e7", "description": "Songs and loops" },
+  { "name": "sfx", "color": "0e8a16", "description": "Sound effects" },
+  { "name": "code", "color": "0052cc", "description": "Programming" },
+  { "name": "docs", "color": "c5def5", "description": "Guides and notes" },
+  { "name": "priority: high", "color": "b60205", "description": "Do soon" },
+  { "name": "priority: low", "color": "e4e669", "description": "Whenever there's time" }
+]

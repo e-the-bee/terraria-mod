@@ -30,7 +30,7 @@ Commit as you go ([COMMITS.md](COMMITS.md)). The first time you Push, push to `o
 ## Opening a Pull Request
 
 1. Right-click your branch in the left panel and choose "Start a pull request to origin/main".
-2. Give it a title saying what you did, plus a couple of lines of description. Attach a screenshot or an audio clip if you have one.
+2. Give it a title saying what you did, plus a couple of lines of description. If it finishes a task, add `Closes #12` (the issue number) so GitHub closes the issue when the PR merges. Attach a screenshot or an audio clip if you have one.
 3. Ask someone in chat to review it.
 
 Anyone except the author can review. The maintainer does the merge.

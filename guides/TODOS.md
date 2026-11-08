@@ -1,42 +1,35 @@
-# TODOs
+# Tasks
 
-There's one shared list and every task has one owner. The list is [TODO.md](../TODO.md) in the project root. Edit it through a branch and PR like any other file.
+Tasks live in the repo's Issues tab on GitHub, one issue per task. Open it from the repo page, or use the project's Issues link. Each task has one owner, called the assignee. An issue with no assignee is free to take.
 
-## Task format
+## Finding something to do
 
-```
-- [ ] [area] Description (@owner) {priority}
-```
-
-`[ ]` is open and `[x]` is done. Area is `art`, `music`, `sfx`, `code` or `docs`. Priority is `high`, `med` or `low`, and defaults to `med`. A task with no owner is free to take.
-
-```
-- [ ] [art] Slime boss idle spritesheet, 4 frames (@sam) {high}
-- [ ] [music] Forest biome theme, 90 seconds, loops
-- [x] [docs] Write branch guide (@donovan)
-- [ ] [sfx] Sword swing sound (@alex) {low}
-```
+Open Issues, filter by label (`art`, `music`, `sfx`, `code`, `docs`), and look for issues with nobody assigned. `priority: high` means do it soon.
 
 ## Taking a task
 
-Add your `@name` to it on a branch (for example `docs/claim-slime-boss-task`) or ask the maintainer to assign it, then tell the team in chat. Do the work on its own branch ([BRANCHES.md](BRANCHES.md)).
+1. Open the issue and click Assignees on the right, then choose yourself.
+2. Tell the team in chat.
+3. Make a branch for it ([BRANCHES.md](BRANCHES.md)).
+
+If you stop working on a task, unassign yourself so someone else can pick it up.
 
 ## Finishing a task
 
-Change `[ ]` to `[x]` in the same PR as the work, so the reviewer sees the task and the result together. If you stop working on a task, remove your name.
+Write `Closes #12` (with the real number) in the description of your Pull Request. When the PR is merged, GitHub closes the issue for you. You don't tick anything off by hand.
 
 ## Adding a task
 
-Write it so a stranger could pick it up: what it is, how big, where it goes. "Make more enemies" is too vague. "Cave bat enemy sprite, 16x16, 2 wing frames" works. If you don't know a detail, write TBD ([TBDS.md](TBDS.md)).
+1. Issues > New issue > Task.
+2. Pick the area and describe it so a stranger could pick it up: what it is, how big, where it goes. "Make more enemies" is too vague. "Cave bat enemy sprite, 16x16, 2 wing frames" works.
+3. If you don't know a detail, write TBD and link the TBD issue ([TBDS.md](TBDS.md)).
 
-A task should take hours to a few days. Split anything bigger.
+The area label is added for you. Add `priority: high` or `priority: low` from the Labels box if it matters. A task should take hours to a few days, so split anything bigger.
 
 ## TODOs in code
 
 ```csharp
-// TODO(name): what's left
+// TODO(#12): what's left
 ```
 
-Also add it to `TODO.md` so people who don't read code can see it.
-
-The list has four sections: In progress, Up next, Backlog / ideas, and Done.
+Use the issue number. If there isn't an issue yet, make one first, so people who don't read code can see it.

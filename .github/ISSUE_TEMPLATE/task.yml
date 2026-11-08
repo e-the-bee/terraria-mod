@@ -1,0 +1,30 @@
+name: Task
+description: Something that needs doing (art, music, sound, code, docs)
+labels: ["task"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - art
+        - music
+        - sfx
+        - code
+        - docs
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+      description: Write it so a stranger could pick it up. Say what it is, how big, and where it goes. "Cave bat enemy sprite, 16x16, 2 wing frames" works. "More enemies" doesn't.
+    validations:
+      required: true
+  - type: textarea
+    id: undecided
+    attributes:
+      label: Open questions
+      description: Anything you don't know yet. Write TBD and link the TBD issue if there is one.
+    validations:
+      required: false

@@ -2,7 +2,7 @@
 
 For artists and musicians. Anything the game loads lives inside the mod folder, `code/Example/`, so tModLoader can find it.
 
-The layout, sizes and formats below are a proposal. Anything not yet agreed is marked TBD and tracked in [TBDS.md](TBDS.md).
+The layout, sizes and formats below are a proposal. Anything not yet agreed is marked TBD and tracked as an issue ([TBDS.md](TBDS.md)).
 
 ## Folders
 
@@ -44,4 +44,5 @@ Ask before committing `.aseprite`, `.psd`, `.flp` or `.als` files. The default p
 - Files are in the right folder with correct names and formats.
 - You've attached a screenshot or audio clip.
 - Only files for this task are staged.
-- Anything undecided is marked TBD and listed in [TBDS.md](TBDS.md).
+- Anything undecided is marked TBD and has an issue ([TBDS.md](TBDS.md)).
+- The PR description says `Closes #N` for the task it finishes.

@@ -1,0 +1,39 @@
+name: Seed starter issues
+
+# One-time. Run it from the Actions tab after "Sync labels" has run, then delete this file.
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const tbd = (title, area, neededBy) => ({
+              title: `TBD: ${title}`,
+              labels: ['tbd', area],
+              body: `### Area\n\n${area}\n\n### Question\n\n${title}\n\n### Needed by\n\n${neededBy}`,
+            });
+            const task = (title, area, extra = []) => ({
+              title,
+              labels: ['task', area, ...extra],
+              body: `### Area\n\n${area}\n\n### What needs doing\n\n${title}`,
+            });
+            const issues = [
+              tbd('What sprite size do we use for items?', 'art', 'before first sprites'),
+              tbd('What is the color palette?', 'art', 'before first sprites'),
+              tbd('Music format and loudness target?', 'music', 'before first song'),
+              tbd('What is the frame size and frame count convention for spritesheets?', 'art', 'before first spritesheet'),
+              tbd('Do we commit source files (.aseprite, .psd, .flp) or keep them on a shared drive?', 'docs', 'before first source file'),
+              tbd('Who is the maintainer who merges Pull Requests?', 'docs', 'before first PR'),
+              task('Draw a first test item sprite once size and palette are decided', 'art'),
+              task('Replace the Hello World log line with real mod content once the first design is agreed', 'code'),
+            ];
+            for (const i of issues) {
+              await github.rest.issues.create({ ...context.repo, ...i });
+            }

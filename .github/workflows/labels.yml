@@ -1,0 +1,30 @@
+name: Sync labels
+
+# Creates or updates the labels listed in .github/labels.json.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/labels.json"]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = require('./.github/labels.json');
+            for (const l of labels) {
+              try {
+                await github.rest.issues.updateLabel({ ...context.repo, ...l });
+              } catch (e) {
+                if (e.status !== 404) throw e;
+                await github.rest.issues.createLabel({ ...context.repo, ...l });
+              }
+            }

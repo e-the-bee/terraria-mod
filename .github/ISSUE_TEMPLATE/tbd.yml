@@ -1,0 +1,37 @@
+name: TBD (needs a decision)
+description: Something nobody has decided yet
+labels: ["tbd"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - art
+        - music
+        - sfx
+        - code
+        - docs
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Phrase it so it can be answered with a choice.
+    validations:
+      required: true
+  - type: input
+    id: needed-by
+    attributes:
+      label: Needed by
+      description: When it starts blocking someone. An event ("before boss art") or a date.
+    validations:
+      required: false
+  - type: textarea
+    id: placeholder
+    attributes:
+      label: Placeholder in use
+      description: What are you using in the meantime, if anything?
+    validations:
+      required: false
