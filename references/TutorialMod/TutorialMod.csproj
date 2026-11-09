@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Content\Buffs\SpongyShieldBuff.png" />
+	  <None Remove="Content\Dusts\BubbleParticle.png" />
+	  <None Remove="Content\Items\Armors\SpongeHat.png" />
+	  <None Remove="Content\Items\Armors\SpongeHat_Head.png" />
+	  <None Remove="Content\Items\Armors\SpongePants.png" />
+	  <None Remove="Content\Items\Armors\SpongePants_Legs.png" />
+	  <None Remove="Content\Items\Armors\SpongeShirt.png" />
+	  <None Remove="Content\Items\Armors\SpongeShirt_Body.png" />
+	  <None Remove="Content\Items\Placeables\SpongeBar.png" />
+	  <None Remove="Content\Items\Placeables\SpongeScrap.png" />
+	  <None Remove="Content\Items\Placeables\SuperPress.png" />
+	  <None Remove="Content\Items\Placeables\TutorialBar.png" />
+	  <None Remove="Content\Items\Placeables\TutorialOre.png" />
+	  <None Remove="Content\Items\Tools\TutorialAxe.png" />
+	  <None Remove="Content\Items\Tools\TutorialHammer.png" />
+	  <None Remove="Content\Items\Tools\TutorialPickaxe.png" />
+	  <None Remove="Content\Items\Weapons\Ammo\WoodPellet.png" />
+	  <None Remove="Content\Items\Weapons\BubbleBeam.png" />
+	  <None Remove="Content\Items\Weapons\PaintWand.png" />
+	  <None Remove="Content\Items\Weapons\PoolPickles.png" />
+	  <None Remove="Content\Items\Weapons\SpongeDart.png" />
+	  <None Remove="Content\Items\Weapons\SpongeSpear.png" />
+	  <None Remove="Content\Items\Weapons\SpongyShield.png" />
+	  <None Remove="Content\Items\Weapons\TutorialShortsword.png" />
+	  <None Remove="Content\Items\Weapons\TutorialSword.png" />
+	  <None Remove="Content\Items\Weapons\WoodenPipe.png" />
+	  <None Remove="Content\Projectiles\Minions\SpongyShieldMinion.png" />
+	  <None Remove="Content\Projectiles\Weapons\BubbleProjectile.png" />
+	  <None Remove="Content\Projectiles\Weapons\PaintProjectile.png" />
+	  <None Remove="Content\Projectiles\Weapons\SpongeDartProjectile.png" />
+	  <None Remove="Content\Projectiles\Weapons\SpongeSpearProjectile.png" />
+	  <None Remove="Content\Projectiles\Weapons\TutorialShortswordProjectile.png" />
+	  <None Remove="Content\Projectiles\Weapons\WoodPelletProjectile.png" />
+	  <None Remove="Content\Tiles\SpongeScrapTile.png" />
+	  <None Remove="Content\Tiles\SuperPress.png" />
+	  <None Remove="Content\Tiles\TutorialBars.png" />
+	  <None Remove="Content\Tiles\TutorialOre.png" />
+	</ItemGroup>
+
+	<!-- References -->
+	<ItemGroup>
+	  <Folder Include="Assets\Music\" />
+	  <Folder Include="Assets\Textures\" />
+	  <Folder Include="Assets\Sounds\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.5.1" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,129 @@
+Items: {
+	TutorialItem: {
+		DisplayName: Tutorial Item
+		Tooltip: An item for crafting tutorial items
+	}
+
+	TutorialSword: {
+		DisplayName: Tutorial Sword
+		Tooltip: A weapon for tutorials
+	}
+
+	TutorialPickaxe: {
+		DisplayName: Tutorial Pickaxe
+		Tooltip: A pickaxe for tutorials
+	}
+
+	TutorialAxe: {
+		DisplayName: Tutorial Axe
+		Tooltip: An axe for tutorials
+	}
+
+	TutorialHammer: {
+		Displayname: Tutorial Hammer
+		Tooltip: A hammer for tutorials
+		DisplayName: Tutorial Hammer
+	}
+
+	TutorialShortsword: {
+		DisplayName: Tutorial Shortsword
+		Tooltip: A shortsword for tutorials
+	}
+
+	TutorialBar: {
+		DisplayName: Tutorial Bar
+		Tooltip: ""
+	}
+
+	TutorialOre: {
+		DisplayName: Tutorial Ore
+		Tooltip: ""
+	}
+
+	BubbleBeam: {
+		DisplayName: Bubble Beam
+		Tooltip: Sounds like something a small, blue turtle creature would use
+	}
+
+	SpongeSpear: {
+		DisplayName: Sponge Spear
+		Tooltip: Sharper than it looks.
+	}
+
+	SpongeBar: {
+		DisplayName: Sponge Bar
+		Tooltip: ""
+	}
+
+	SpongeScrap: {
+		DisplayName: Sponge Scrap
+		Tooltip: Don't ask how this formed underground in stone
+	}
+
+	SpongeHat: {
+		DisplayName: Sponge Hat
+		Tooltip: +20 Max Life
+	}
+
+	SpongePants: {
+		DisplayName: Sponge Pants
+		Tooltip: +2% Damage Reduction
+	}
+
+	SpongeShirt: {
+		DisplayName: Sponge Shirt
+		Tooltip: Grants immunity to On Fire
+	}
+
+	SpongeDart: {
+		DisplayName: Sponge Dart
+		Tooltip: Shoots out bubbles upon bouncing on a tile
+	}
+
+	SpongyShield: {
+		DisplayName: Spongy Shield
+		Tooltip: Absorbs some of your damage by granting you an additional 2 defense
+	}
+
+	WoodPellet: {
+		DisplayName: Wood Pellet
+		Tooltip: ""
+	}
+
+	WoodenPipe: {
+		DisplayName: Wooden Pipe
+		Tooltip: What in what??
+	}
+
+	PoolPickles: {
+		DisplayName: Pool Pickles
+		Tooltip: Shoots a spread of 5 darts
+	}
+
+	PaintWand: {
+		DisplayName: Paint Wand
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	TutorialShortswordProjectile.DisplayName: Tutorial Shortsword Projectile
+	BubbleProjectile.DisplayName: Bubble Projectile
+	SpongeSpearProjectile.DisplayName: Sponge Spear Projectile
+	SpongeDartProjectile.DisplayName: Sponge Dart Projectile
+	SpongyShieldMinion.DisplayName: Spongy Shield Minion
+	WoodPelletProjectile.DisplayName: Wood Pellet Projectile
+	PaintProjectile.DisplayName: Paint Projectile
+}
+
+Tiles: {
+	TutorialOre.MapEntry: Tutorial Ore
+	SpongeScrapTile.MapEntry: Sponge Scrap
+}
+
+Buffs: {
+	SpongyShieldBuff: {
+		DisplayName: Spongy Shield Buff
+		Description: Grants you an additional 2 defense
+	}
+}
